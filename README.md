@@ -1,20 +1,17 @@
-# COVID-19 Cytokine Analysis
+# Mutclust
+
 ## Overview
-This repository contains the code and data used in our study on the cytokine profiles of COVID-19 patients. Our research focuses on identifying significant cytokines that can serve as biomarkers for disease severity and progression, with an emphasis on understanding the immune response during the deterioration and recovery phases of severe COVID-19 cases.
+This repository contains the codes and data used in our study to identify mutation hotspots of SARS-CoV-2. Our research focuses on identifying hotspot regions, which are areas densely populated with nucleotides where mutations occur frequently, based on the H-score calculated from 224,318 sequences in the GISAID database. These identified hotspots were further applied to the COVID-19 dataset to identify severity-related marker hotspots.
 
 ## Repository Contents
-- data_preprocessing/: Scripts for preprocessing cytokine and clinical data.
-- models/: Implementation of the Random Forest model used for analysis.
-- analysis/: Scripts for calculating SHAP values and performing statistical tests.
-- visualization/: Code for generating the figures and plots included in the manuscript.
-- docs/: Documentation and supplementary materials related to the study.
-## Data
-The dataset used in this study includes cytokine data from plasma and laboratory data (e.g., neutrophil and lymphocyte counts) from blood samples, alongside clinical data from patients' Electronic Health Records (EHRs). The cytokine profiles were measured by the Korea National Institute of Health (KNIH) using the Luminex MAGPIX system with a customized panel, following a standardized protocol.
+- example_data/input: Input data for performing Mutclust algorithm.
+- src/: Scripts of Mutclust algorithm.
 
-The dataset of the COVID-19 cohort used in this study is available in the Clinical and Omics Data Archive (CODA) database under the accession number CODA_D23017. Due to patient privacy concerns and data protection regulations, access to this data requires appropriate authorization.
+## Data
+The dataset used in this study consists of 224,318 SARS-CoV-2 sequences from the GISAID database, spanning the period from January 2020 to November 2022. Sequence alignment was performed using MAFFT v7.490 with hCoV-19/Wuhan/WIV04/2019 (GISAID Access ID: EPI_ISL_402124, GenBank Access: MN908947) as the reference genome.
 
 ## Code Availability
-The code used for data preprocessing, Random Forest model implementation, SHAP value calculation, and visualization is available in this repository. To reproduce our results, please follow the instructions provided in the respective directories.
+The code used for performing Mutclust algorithm and visualize mutation hotspots is available in this repository. To reproduce our results, please follow the instructions provided in the respective directories.
 
 ## Getting Started
 To get started with the code in this repository, clone the repository to your local machine and install the required dependencies listed in requirements.txt.
