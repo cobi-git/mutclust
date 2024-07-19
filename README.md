@@ -3,7 +3,7 @@
 ## Overview
 This repository contains the codes and data used in our study to identify mutation hotspots of SARS-CoV-2. Our research focuses on identifying hotspot regions, which are areas densely populated with nucleotides where mutations occur frequently, based on the H-score calculated from 224,318 sequences in the GISAID database. These identified hotspots were further applied to the COVID-19 dataset to identify severity-related marker hotspots.
 
-A brief tutorial with example data can be found in the Tutorial.ipynb jupyter script.
+A brief tutorial that includes the procedure of how the 422 mutation hotspots were found with the input GISAID data is provided in the Tutorial.ipynb jupyter script.
 
 ## Repository Contents
 - example_data/input: Input data for performing Mutclust algorithm.
